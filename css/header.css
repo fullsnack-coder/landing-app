@@ -1,0 +1,37 @@
+.home__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.app__logo {
+    height: 53px;
+    width: 115px;
+}
+
+.home__navbar {
+   display: flex;
+   justify-content: space-between;
+   padding: 13px 20px;
+   background-color: #0000006a;
+   backdrop-filter: blur(10px);
+}
+
+.home__navbar-list {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .home__header .home__navbar-list {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .home__header .home__navbar-list .nav-item {
+        margin-right: 12px;
+    }
+}

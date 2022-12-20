@@ -1,0 +1,97 @@
+.home__main {
+    background-color: #fff;
+    font-family: 'Heebo';
+    padding: 25px;
+}
+
+.home__main .main__we-are {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.main__we-are-subtitle {
+    color: #717171;
+    font-size: 18px;
+}
+
+.main__we-are-title {
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.main__we-are-title::after {
+    content: '';
+    position: absolute;
+    background-color: #FC0606;
+    height: 10px;
+    width: 56px;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.we-are__team-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.we-are__team-description {
+    font-size: 14px;
+}
+
+.main__team-profiles {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__team-profiles .profile {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.profile:not(:last-of-type) {
+    border-bottom: solid 1px #A0A0A0;
+}
+
+.profile__avatar {
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: solid 3px #A0A0A0;
+    margin-right: 60px;
+    overflow: hidden;
+    height: 77px;
+    width: 77px;
+}
+
+.profile__description-title {
+    font-size: 18px;
+}
+
+.profile__description-content {
+    font-size: 14px;
+}
+
+.main__cover {
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 613px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .main__team-profiles {
+        flex-direction: row;
+    }
+
+    .main__team-profiles .profile {
+        border: none;
+    }
+
+    .main__team-profiles .profile:not(:last-of-type) {
+        margin-right: 40px;
+    }
+}

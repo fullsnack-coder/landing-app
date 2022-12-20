@@ -1,0 +1,92 @@
+.home__hero {
+    background-image: url('https://i.imgur.com/peyPUh9.jpg');
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    width: 100%;
+}
+
+.home__hero-overlay {
+    background-color: #240a3aac;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__content {
+    color: #fff;
+    min-width: 290px;
+    width: 50%;
+    z-index: 9;
+}
+
+.hero__content-title,
+.hero__content-main {
+    font-family: 'Heebo';
+}
+
+.hero__content-title {
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    margin-bottom: 34px;
+}
+
+.hero__content-title::before {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    width: 48px;
+    height: 7px;
+    background-color: #FC0606;
+}
+
+.hero__content-main {
+    font-size: 14px;
+    margin-bottom: 49px;
+}
+
+.hero__content-buttons-container {
+    display: flex;
+}
+
+.hero__button {
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Heebo';
+    white-space: nowrap;
+    padding: 10px 22px;
+}
+
+.hero__button.primary {
+    background-color: #fff;
+}
+
+.hero__button.secondary {
+    background-color: #ffffff95;
+}
+
+.hero__button:not(:last-of-type) {
+    margin-right: 19px;
+}
+
+@media screen and (min-width: 1024px) {
+    .home__hero-overlay {
+        justify-content: flex-start;
+        padding: 20px 144px;
+    }
+
+    .hero__content {
+        max-width: 499px;
+        width: 70%;
+    }
+}
